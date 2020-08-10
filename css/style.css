@@ -1,34 +1,423 @@
-body {
-	background-color: #dfdfdf;
-	font-size: 17px;
-	font-family: Helvetica, sans-serif, Arial;
-}
-p {
-    line-height: 2.0;
-}
-img {
-    max-height: 500px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
+/*----Madison Colvin----*/
+
 header {
-	height: 100px;
-    width: 100%;
-    text-align: center;
-    vertical-align: middle;
+	background: url('../images/original.jpg');
+	height: 500px;
+	width: 100%;
+	background-position: center bottom;
+	background-size: auto;
+	display: table;
+	overflow: hidden;
+	background-repeat: repeat-x;
 }
+header img {
+	margin-left: 50%;
+	transform: translateX(-90%);
+	width: 50%;
+	height: 90%;
+}
+
+main hr {
+	border-color: #003F87;
+}
+
+body {
+	margin: 0;
+	background-image: linear-gradient(#a7bbd4,#f0f3f7, #b7e9f7);
+	font-size: 16px;
+	font-family: Verdana, sans-serif;
+	font-size: 16px;
+}
+
+main,
+footer {
+	background-color: white;
+	width: 70%;
+	margin-top: 15px;
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-bottom: 50px;
+	padding-top: 10px;
+}
+
 h1,
 h2,
-h3 {
+h3,
+h4,
+h5,
+h6 {
+	font-family: 'Muli', sans-serif;
+}
+
+#top > h1{
+	display: table-cell;
 	vertical-align: middle;
-	height: 40px;
-	color: #170f63;
+	margin: 0;
+	font-size: 48pt;
+	height: 100px;
+	color:white;
 	text-align: center;
 	width: 100%;
 }
-li {
-    font-size: 17px;
-    line-height: 2.0;
-    color: #0a0447;
+
+h2 {
+	color: #003F87;
+	text-align: center;
 }
+
+dt {
+	font-weight: bold;
+}
+
+nav {
+	border-top: 10px solid #003F87;
+	background-color: #0083D6;
+	box-shadow: 0px 4px 4px -4px black;
+}
+
+nav ul {
+	margin: 0;
+	list-style-type: none;
+	text-align: center;
+}
+
+nav ul li {
+	display: inline-block;
+	position: relative;
+	text-align: center;
+}
+
+nav ul li:hover ul {
+	display: block;
+	z-index: 1;
+}
+
+nav ul li ul {
+	display: none;
+	position: absolute;
+	padding: 0px;
+	min-width: 100%
+}
+
+nav ul li ul li {
+	display: block;
+	background-color: #0083D6;
+}
+
+nav ul li ul li a {
+	display: block;
+	text-align: center;
+}
+
+nav ul li a {
+	font-family: 'Muli', sans-serif;
+	text-transform: uppercase;
+	text-decoration: none;
+	display: block;
+	color: white;
+	padding: 10px 20px;
+	transition: background-color 0.2s ease;
+}
+
+nav ul li a:hover {
+	background-color: rgb(59, 163, 228);
+}
+
+footer {
+	padding: 20px;
+	display: block;
+	background-color: #003F87;
+	color: white;
+}
+
+footer a {
+	color: white;
+}
+
+button {
+	width: 100px;
+	height: 50px;
+	display: block;
+	background-color: lightgrey;
+	display: flex;
+    justify-content: center;
+	align-items: center;
+}
+
+.button-flip > button{
+	margin-left: 110px;
+	margin-top: 70px;
+}
+.button-right > button{
+	margin-left: 220px;
+	margin-top: 70px;
+}
+
+/* ---------- Calendar ---------- */
+
+caption {
+	font-size: 150%;
+	color: #123652;
+	font-weight: bold;
+}
+
+table {
+	font-size: 25px;
+	width: 100%;
+	opacity: 1.0;
+	text-align: center;
+	padding: 50px;
+	table-layout:fixed;
+}
+
+tr:nth-of-type(even) {
+	background-color: #eeeeee;
+}
+
+tr:nth-of-type(odd) {
+	background-color: lightgrey;
+}
+
+td {
+	overflow: hidden; 
+    text-overflow: ellipsis; 
+    word-wrap: break-word;
+}
+
+th {
+	padding: 20px 10px 20px 10px;
+	color: black;
+	background-color: lightblue;
+}
+
+tr{
+	line-height: 100px;
+}
+
+.calendar {
+	display: block;
+	width: 100%;
+	
+}
+
+/* ---------- SLIDESHOW ---------- */
+
+#slideshow {
+	width: 80%;
+	padding-top: 53.36%;
+	margin-left: auto;
+	margin-right: auto;
+	background-size: 100%;
+	position: relative;
+}
+
+#slideshow-caption {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	color: white;
+	background-color: rgba(0, 0, 0, 0.6);
+}
+
+#slideshow-caption * {
+	margin: 15px;
+}
+
+#slideshow-previous {
+	position: absolute;
+	left: 0;
+	top: 50%;
+	width: 70px;
+	text-align: center;
+}
+
+#slideshow-next {
+	position: absolute;
+	left: calc(100% - 70px);
+	top: 50%;
+	width: 70px;
+	text-align: center;
+}
+
+/*-------------------------blocks----------------------------*/
+
+#blocks {
+	display: flex;
+	margin-bottom: 60px;
+}
+
+#blocks>div {
+	margin: 10px;
+	border: 3px solid #006B3F;
+	padding: 15px;
+	background-color: #BAD80A;
+}
+
+/*-------------------------text decorations----------------------------*/
+
+h2 {
+	text-align: center;
+	font-weight: bold;
+	text-transform: uppercase;
+	letter-spacing: 3px;
+}
+
+h3 {
+	color: #0083D6;
+	text-decoration: underline;
+}
+
+h6 {
+	color: #003F87;
+	font-weight: bold;
+	text-transform: uppercase;
+	font-size: 80%;
+}
+
+/*------------MEDIA QUERIES-------------------------*/
+
+@media screen and (max-width: 710px) {
+	nav ul {
+		width: 100%;
+		padding: 0px;
+	}
+	nav ul li {
+		display: block;
+		border-bottom: 1px solid #ccc;
+	}
+
+	aside {
+		width: 100%;
+	}
+	form textarea {
+		width: 375px;
+	}
+	form {
+		width: 420px;
+	}
+	fieldset {
+		width: 400px;
+	}
+	th,
+	td {
+		width: 500px;
+		height: 30px;
+		font-size: 12px;
+	}
+	.calendar {
+		margin: 0px;
+		border: 0px;
+		padding: 0px;
+		border-spacing: 0px;
+	}
+	table {
+		padding: 0px;
+		border: 0px;
+		margin: 0px;
+	}
+	#blocks {
+		display: block;
+	}
+	#blocks > div {
+		margin-left: 0px;
+		margin-right: 0px;
+	}
+	main,
+	footer {
+		width: calc(100% - 40px);
+	}
+}
+
+/*------------Flip Cards-------------------------*/ 
+
+/* Flip card css and code citation URL: https://www.w3schools.com/howto/howto_css_flip_card.asp */ 
+
+.flip-card {
+background-color: transparent;
+width: 300px;
+height: 300px;
+perspective: 1000px;
+margin: .9rem;
+border-radius: 80px;
+padding: 20px;
+}
+
+.flip-card-inner {
+width: 100%;
+height: 100%;
+text-align: center;
+transform-style: preserve-3d;
+transition: transform 0.65s;
+}
+
+.flip-card:hover .flip-card-inner {
+transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+position: absolute;
+width: 300px;
+height: 300px;
+backface-visibility: hidden;
+}
+
+.flip-card-back {
+color: white;
+background-color: #003F87;
+transform: rotateY(180deg);
+}
+
+.container {
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+}
+
+.alignment{
+	display: flex;
+	justify-content: center;
+}
+
+/*------------Sectioning-------------------------*/ 
+/* For this CSS I referenced my own code from assignment 3: https://github.com/info340a-su20/problem-set-03-madisoncolvin/tree/master/problem-a*/
+
+#one {
+	flex-basis: 240px;
+	padding: 1em;
+  }
+  
+  #two {
+	background-color: #eee;
+	flex: 1;
+	padding: 1em;
+  }
+  
+  #three {
+	flex-basis: 240px;
+	padding: 1em;
+  }
+  .first-container {
+	display: flex;
+	flex-direction: column;
+	flex: 1, 0, 0;
+  }
+  
+  .second-container {
+	display: flex;
+	height: 100%;
+  }
+  
+  .third-container {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+  }
+  
+
+
+
+  
