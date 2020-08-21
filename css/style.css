@@ -1,8 +1,8 @@
 /*----Madison Colvin----*/
 
 header {
-	background: url('../images/original.jpg');
-	height: 500px;
+	background: url('../images/headerimage.jpg');
+	height: 150px;
 	width: 100%;
 	background-position: center bottom;
 	background-size: auto;
@@ -17,6 +17,10 @@ header img {
 	height: 90%;
 }
 
+img {
+	max-width: 100%;
+	max-height: 100%;
+}
 main hr {
 	border-color: #003F87;
 }
@@ -164,11 +168,10 @@ caption {
 }
 
 table {
-	font-size: 25px;
 	width: 100%;
 	opacity: 1.0;
 	text-align: center;
-	padding: 50px;
+	padding: 10px;
 	table-layout:fixed;
 }
 
@@ -187,19 +190,23 @@ td {
 }
 
 th {
-	padding: 20px 10px 20px 10px;
 	color: black;
 	background-color: lightblue;
+	font-size: 16px;
 }
 
 tr{
-	line-height: 100px;
+	line-height: 50px;
 }
 
 .calendar {
 	display: block;
 	width: 100%;
-	
+}
+
+hr{
+	margin-top: 10px;
+	margin-bottom: 10px;
 }
 
 /* ---------- SLIDESHOW ---------- */
@@ -246,13 +253,13 @@ tr{
 
 #blocks {
 	display: flex;
-	margin-bottom: 60px;
+	margin-bottom: 5px;
 }
 
 #blocks>div {
 	margin: 10px;
 	border: 3px solid #006B3F;
-	padding: 15px;
+	padding: 5px;
 	background-color: #BAD80A;
 }
 
@@ -267,7 +274,6 @@ h2 {
 
 h3 {
 	color: #0083D6;
-	text-decoration: underline;
 }
 
 h6 {
@@ -279,7 +285,7 @@ h6 {
 
 /*------------MEDIA QUERIES-------------------------*/
 
-@media screen and (max-width: 710px) {
+@media screen and (max-width: 500px) {
 	nav ul {
 		width: 100%;
 		padding: 0px;
@@ -292,32 +298,7 @@ h6 {
 	aside {
 		width: 100%;
 	}
-	form textarea {
-		width: 375px;
-	}
-	form {
-		width: 420px;
-	}
-	fieldset {
-		width: 400px;
-	}
-	th,
-	td {
-		width: 500px;
-		height: 30px;
-		font-size: 12px;
-	}
-	.calendar {
-		margin: 0px;
-		border: 0px;
-		padding: 0px;
-		border-spacing: 0px;
-	}
-	table {
-		padding: 0px;
-		border: 0px;
-		margin: 0px;
-	}
+
 	#blocks {
 		display: block;
 	}
@@ -386,7 +367,7 @@ justify-content: center;
 /* For this CSS I referenced my own code from assignment 3: https://github.com/info340a-su20/problem-set-03-madisoncolvin/tree/master/problem-a*/
 
 #one {
-	flex-basis: 240px;
+	flex-basis: 180px;
 	padding: 1em;
   }
   
@@ -397,9 +378,10 @@ justify-content: center;
   }
   
   #three {
-	flex-basis: 240px;
+	flex-basis: 140px;
 	padding: 1em;
   }
+  
   .first-container {
 	display: flex;
 	flex-direction: column;
@@ -408,16 +390,63 @@ justify-content: center;
   
   .second-container {
 	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
 	height: 100%;
+	width: 100%;
   }
   
   .third-container {
 	display: flex;
+	flex-direction: row;
 	flex-wrap: wrap;
 	justify-content: center;
+	align-items: center;
   }
   
+#listspacing li {
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+input {
+	margin-bottom: 15px;
+}
 
-
-
+/*------------Grid----------------------*/ 
+.grid-container{
+	display: grid;
+	grid-template-columns: 100%;
+	grid-template-rows: auto auto auto auto auto auto auto auto auto;
+	justify-content: center;
+	align-content: center;
+	grid-gap: 10px;
+	padding: 10px;
+}
   
+.item1{
+
+}
+.item2{
+
+}
+.item3{
+	
+}
+.item4{
+	
+}
+.item5{
+	
+}
+.item6{
+	
+}
+.item7{
+	
+}
+.item8{
+	
+}
+.item9{
+	
+}
