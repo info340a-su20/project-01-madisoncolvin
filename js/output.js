@@ -2,6 +2,10 @@
 
 //Madison Colvin
 
+<<<<<<< HEAD
+=======
+//writes form output to the webpage
+>>>>>>> master
 function output(){
     let name = sessionStorage.getItem("name");
     let email = sessionStorage.getItem("email");
