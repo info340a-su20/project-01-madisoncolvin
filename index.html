@@ -15,6 +15,9 @@
       <!-- link css -->
       <link rel="stylesheet" href="css/style.css">
       <!-- javascript for image gallery -->
+      <script src="js/validate.js"></script>
+      <script src="js/chart.js"></script>
+      <script src="js/output.js"></script>
       <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.3/dist/Chart.min.js"></script>
       <script>
          let images = ["blm_protest.jpg", "george_floyd.jpg", "kneeling.jpg", "pride_two.jpg", "pride.jpg",
@@ -41,54 +44,54 @@
    </head>
    <body>
       <div class="first-container">
-      <header id="top">
-         <img src="images/original.jpg" alt="BLM Protest">
-         <h1>Speak Out</h1>
-      </header>
-      <nav>
-         <ul>
-            <li>
-               <a href="index.html">Home</a>
-            </li>
-            <li>
-               <a href="upcoming.html">Protests</a>
-               <ul>
-                  <li>
-                     <a href="myprotests.html">My Protests</a>
-                  </li>
-                  <li>
-                     <a href="upcoming.html">Near Me</a>
-                  </li>
-                  <li>
-                     <a href="upcoming.html">Upcoming Protests</a>
-                  </li>
-               </ul>
-            </li>
-            <li>
-               <a href="organize.html">Organize</a>
-            </li>
-            <li>
-               <a href="connect.html">Connect</a>
-            </li>
-            <li>
-               <a href="gallery.html">Gallery</a>
-            </li>
-            <li>
-               <a href="">Stay Involved</a>
-               <ul>
-                  <li>
-                     <a href="donate.html">Donate</a>
-                  </li>
-                  <li>
-                     <a href="petitions.html">Petitions</a>
-                  </li>
-                  <li>
-                     <a href="newsletter.html">newsletter</a>
-                  </li>
-               </ul>
-            </li>
-         </ul>
-      </nav>
+         <header id="top">
+            <img src="images/original.jpg" alt="BLM Protest">
+            <h1>Speak Out</h1>
+         </header>
+         <nav>
+            <ul>
+               <li>
+                  <a href="index.html">Home</a>
+               </li>
+               <li>
+                  <a href="upcoming.html">Protests</a>
+                  <ul>
+                     <li>
+                        <a href="myprotests.html">My Protests</a>
+                     </li>
+                     <li>
+                        <a href="upcoming.html">Near Me</a>
+                     </li>
+                     <li>
+                        <a href="upcoming.html">Upcoming Protests</a>
+                     </li>
+                  </ul>
+               </li>
+               <li>
+                  <a href="organize.html">Organize</a>
+               </li>
+               <li>
+                  <a href="connect.html">Connect</a>
+               </li>
+               <li>
+                  <a href="gallery.html">Gallery</a>
+               </li>
+               <li>
+                  <a href="">Stay Involved</a>
+                  <ul>
+                     <li>
+                        <a href="donate.html">Donate</a>
+                     </li>
+                     <li>
+                        <a href="petitions.html">Petitions</a>
+                     </li>
+                     <li>
+                        <a href="newsletter.html">newsletter</a>
+                     </li>
+                  </ul>
+               </li>
+            </ul>
+         </nav>
       <main>
          <div class="grid-container">
             <div class="item1">
@@ -232,100 +235,93 @@
                         <div class="card">
                            <!-- Card 1 -->
                            <div class="flip-card">
-                              <a href="https://blacklivesmatter.com/">
-                                 <div class="flip-card-inner">
-                                    <div class="flip-card-front">
-                                       <img src="images/blm.jpg" alt="BLM March Capitol Hill" style="width:300px;height:300px;">
-                                    </div>
-                                    <div class="flip-card-back">
-                                       <h1>Capitol Hill BLM March</h1>
-                                       <p>August 22, 2020, 2pm-5pm</p>
-                                       <p>Cal Anderson Park</p>
-                                       <div class="button-flip">
-                                          <button type="button">Add to Calendar</button>
-                                       </div>
+                              <div class="flip-card-inner">
+                                 <div class="flip-card-front">
+                                    <img src="images/blm.jpg" alt="BLM March Capitol Hill" style="width:300px;height:300px;">
+                                 </div>
+                                 <div class="flip-card-back">
+                                    <h1>Capitol Hill BLM March</h1>
+                                    <p>August 22, 2020, 2pm-5pm</p>
+                                    <p>Cal Anderson Park</p>
+                                    <div class="button-flip">
+                                       <button type="button">Add to Calendar</button>
                                     </div>
                                  </div>
-                              </a>
+                              </div>
                            </div>
                         </div>
                         <div class="card">
                            <!-- Card 2 -->
                            <div class="flip-card">
-                              <a href="https://www.seattlepride.org/">
-                                 <div class="flip-card-inner">
-                                    <div class="flip-card-front">
-                                       <img src="images/pride.jpg" alt="Pride" style="width:300px;height:300px;">
-                                    </div>
-                                    <div class="flip-card-back">
-                                       <h1>Seattle PrideFest</h1>
-                                       <p>June 18, 2021, 11pm-4pm</p>
-                                       <p>Seattle Center</p>
-                                       <div class="button-flip">
-                                          <button type="button">Add to Calendar</button>
-                                       </div>
+                              <div class="flip-card-inner">
+                                 <div class="flip-card-front">
+                                    <img src="images/pride.jpg" alt="Pride" style="width:300px;height:300px;">
+                                 </div>
+                                 <div class="flip-card-back">
+                                    <h1>Seattle PrideFest</h1>
+                                    <p>June 18, 2021, 11pm-4pm</p>
+                                    <p>Seattle Center</p>
+                                    <div class="button-flip">
+                                       <button type="button">Add to Calendar</button>
                                     </div>
                                  </div>
-                              </a>
+                              </div>
                            </div>
                         </div>
                         <div class="card">
                            <!-- Card 3 -->
                            <div class="flip-card">
-                              <a href="https://womensmarch.com/">
-                                 <div class="flip-card-inner">
-                                    <div class="flip-card-front">
-                                       <img src="images/women.jpg" alt="Women's March" style="width:300px;height:300px;">
-                                    </div>
-                                    <div class="flip-card-back">
-                                       <h1>Seattle Women's March</h1>
-                                       <p>November 20, 2020, 11am-3pm</p>
-                                       <p>Seattle Center</p>
-                                       <div class="button-flip">
-                                          <button type="button">Add to Calendar</button>
-                                       </div>
+                              <div class="flip-card-inner">
+                                 <div class="flip-card-front">
+                                    <img src="images/women.jpg" alt="Women's March" style="width:300px;height:300px;">
+                                 </div>
+                                 <div class="flip-card-back">
+                                    <h1>Seattle Women's March</h1>
+                                    <p>November 20, 2020, 11am-3pm</p>
+                                    <p>Seattle Center</p>
+                                    <div class="button-flip">
+                                       <button type="button">Add to Calendar</button>
                                     </div>
                                  </div>
-                              </a>
+                              </div>
                            </div>
                         </div>
                         <div class="card">
                            <!-- Card 4 -->
                            <div class="flip-card">
-                              <a href="https://blacklivesmatter.com/">
-                                 <div class="flip-card-inner">
-                                    <div class="flip-card-front">
-                                       <img src="images/protest_square.png" alt="U-District BLM Protest" style="width:300px;height:300px;">
-                                    </div>
-                                    <div class="flip-card-back">
-                                       <h1>U-District BLM Protest</h1>
-                                       <p>August 29, 2020, 2pm-5pm</p>
-                                       <p>Burke Museum</p>
-                                       <div class="button-flip">
-                                          <button type="button">Add to Calendar</button>
-                                       </div>
+                              <div class="flip-card-inner">
+                                 <div class="flip-card-front">
+                                    <img src="images/protest_square.png" alt="U-District BLM Protest" style="width:300px;height:300px;">
+                                 </div>
+                                 <div class="flip-card-back">
+                                    <h1>U-District BLM Protest</h1>
+                                    <p>August 29, 2020, 2pm-5pm</p>
+                                    <p>Burke Museum</p>
+                                    <div class="button-flip">
+                                       <button type="button">Add to Calendar</button>
                                     </div>
                                  </div>
-                              </a>
+                              </div>
                            </div>
                         </div>
+                     </div>
                   </section>
                   <section id="three">
                      <div id="blocks">
-                     <div>
-                     <h6>Protest Practices</h6>
-                     <h3>
-                     <a href="https://www.realsimple.com/work-life/life-strategies/how-to-protest-safely">Best Practices</a>
-                     </h3>
-                     <ul>
-                        <div id="listspacing">
+                        <div>
+                        <h6>Protest Practices</h6>
+                        <h3>
+                        <a href="https://www.realsimple.com/work-life/life-strategies/how-to-protest-safely">Best Practices</a>
+                        </h3>
+                        <ul>
                            <li>Be kind</li>
                            <li>Be peaceful</li>
                            <li>Make a difference</li>
                            <li>Stay safe</li>
+                           <li>Help others</li>
+                           <li>Make a difference</li>
                            <li>Speak Out</li>
-                        </div>
-                     </ul>
+                        </ul>
                      </div>
                   </div>
                   <div id="blocks">
@@ -335,24 +331,24 @@
                      <a href="https://openmicroc.com/tips-to-protest-safely/">How to Protest Safely</a>
                      </h3>
                      <ul>
-                        <div id="listspacing">
-                           <li>Bring a friend</li>
-                           <li>Bring food & water</li>
-                           <li>Bring identification</li>
-                           <li>Pay attention</li>
-                           <li>Stay calm and level-headed</li>
-                           <li>Wear your mask</li>
-                        </div>
+                        <li>Bring a friend</li>
+                        <li>Bring food & water</li>
+                        <li>Bring identification</li>
+                        <li>Pay attention</li>
+                        <li>Stay calm and level-headed</li>
+                        <li>Be aware of your surroundings</li>
+                        <li>Pack appropriately</li>
+                        <li>Wear your mask</li>
                      </ul>
                      </div>
                   </div>
                   <div id="blocks">
                      <div>
-                     <h6>Protest Tips</h6>
-                     <h3>
-                     <a href="https://www.wired.com/story/how-to-protest-safely-gear-tips/">Tips for Successful Protesting</a>
-                     </h3>
-                     <p>Educate yourself and realize that "it's not about you". Be prepared to amplify what others are saying & be prepared to listen. </p>
+                        <h6>Protest Tips</h6>
+                        <h3>
+                        <a href="https://www.wired.com/story/how-to-protest-safely-gear-tips/">Tips for Successful Protesting</a>
+                        </h3>
+                        <p>Educate yourself and realize that "it's not about you". Be prepared to amplify what others are saying & be prepared to listen. </p>
                      </div>
                   </div>
                   </section>
@@ -439,15 +435,15 @@
                      Please allow 2-3 business days to see your published event as our moderators will need to approve 
                      the event's publication.
                   </p>
-                  <fieldset>
-                     <legend>Organze a Protest</legend>
-                     <form action="contact2.html" method="post" onsubmit="return validateForm()">
+                  <form name="protestForm" method="post" onsubmit="return validate()" action="javascript:output()">
+                     <fieldset>
+                        <legend>Organze a Protest</legend>
                         <label for="name">Name:</label> <br>
                            <input id="name" type="text" name="n1" placeholder="Enter your name."> <br>
                         <label for="email">Contact Email:</label> <br>
-                           <input id="email" type="text" name="id" placeholder="Enter your email."> <br>
+                           <input id="email" type="text" name="email" placeholder="Enter your email."> <br>
                         <label for="protest">Protest Name:</label> <br>
-                        <input id="protest" type="text" name="n2" placeholder="Name of the protest."> <br>
+                           <input id="protest" type="text" name="protest" placeholder="Name of the protest."> <br>
                         <label for="date-protest">Date of the Protest:</label> <br>
                            <input id="date-protest" type="date" name="date"> <br>
                         <label for="time-protest">Time of the Protest:</label> <br>
@@ -455,19 +451,20 @@
                         <label for="location" >Location of the Protest:</label> <br>
                            <input id="location" type="text" name="location" placeholder="Location of the protest."> <br>
                         <label for="description">Description of the Protest:</label> <br>
-                        <textarea id="description" name="comment" rows="20" cols="80" style="height: 100px; width: 95%"
+                        <textarea id="description" name="description" rows="20" cols="80" style="height: 100px; width: 95%"
                            placeholder="Please write the protest description here. Please include the cause and any other important details."></textarea> <br>
-                  <label for="submission">Please Submit the Form</label> <br>
-                  <input id="submission" type="submit" name="submit">
-                     </form>
-                  </fieldset>
-
+                        <input type="submit" value="Submit Form">
+                     </fieldset>
+                  </form>
+                  <div id="result">
+                     <p id="thankyou"></p>
+                  </div>
                   <hr>
                </div>
                <div class="item8">
                   <h2>More Ways to Give Back</h2>
-               <!-- GoFundMe -->
                   <div class="alignment">
+                     <!-- GoFundMe -->
                         <a href="https://www.gofundme.com/">
                                  <img src="images/go-fund-me-logo.png" alt="Go Fund Me" style="width:200px;height:200px;">
                         </a>
@@ -476,60 +473,14 @@
                               <img src="images/change.png" alt="Petition" style="width:200px;height:200px;">
                         </a>
                   </div>
+               <hr>
             </div>
-            <canvas id="chart" width="400px" height="400px"></canvas>
-    <script>
-    
-    chartData()  
-    async function chartData(){
-        const data = await getData();
-        const ctx = document.getElementById('chart').getContext('2d');
-        const myChart = new Chart(ctx, {
-        type: 'bar',
-        data: {
-            labels: data.xlabels,
-            datasets: [{
-                label: 'Killings by Police Across the US in 2017',
-                data: data.ylabels,
-                backgroundColor: 'rgba(255, 99, 132, 0.2)',
-                borderColor: 'rgba(255, 99, 132, 1)',
-                borderWidth: 1
-            }]
-        },
-        options: {
-            scales: {
-                yAxes: [{
-                    ticks: {
-                        beginAtZero: true
-                    }
-                }]
-            }
-        }
-    });
-};
-
-    async function getData(){
-        const xlabels = [];
-        const ylabels = [];
-
-        const response = await fetch("PoliceKillings.csv");
-        const data = await response.text();
-        console.log(data);
-    
-       /*splits by rows of data and gets rid of header row*/
-      const table = data.split('\n').slice(1);
-        table.forEach( row => {
-            const columns = row.split(',');
-            const state = columns[0];
-            xlabels.push(state);
-            const killing = columns[1];
-            ylabels.push(killing);
-            console.log(year, temp);
-        });
-        return{xlabels, ylabels};
-    }
-
-    </script>
+         </div>
+         <h2>Police Violence</h2>
+         <canvas id="chart" width="400" height="400"></canvas>
+         <script>
+            chartData();
+         </script>
          </main>
          <div class="item9">
             <footer>
@@ -546,12 +497,11 @@
             <br>
             <br> (206)222-2222</div>
             <hr>
-            <div>Copyright &copy; 2020 Madison Colvin
+            <div> Copyright &copy; 2020 Madison Colvin
             </div>
             </footer>
       </div>
       </div>
-      </body>
       <script>
          let slideshow;
          let slideshowIndex = 0;
@@ -577,5 +527,5 @@
             caption.innerHTML = "<p>" + descriptions[slideshowIndex] + "</p>";
          }
       </script>
-      </div>
+      </body>
    </html>
