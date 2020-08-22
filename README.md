@@ -16,7 +16,3 @@ Outside of this project, and if I were to actually implement this app in the rea
 Additionally, the gallery would have multiple views instead of the one that I provided, the form submission would give a preview of the created event, and the application would require the user to sign up to use the app. To remain anonymous online, the information provided on the site would only be available to moderators and any identifying information would remain anonymous on the user’s end. 
 
 Overall, I am happy with the way this application turned out and am proud of what I accomplished in such a short quarter. This project pushed me out of my comfort zone and challenged me to learn new things. Thank you so much for a great quarter!
-<<<<<<< HEAD
-
-=======
->>>>>>> master
